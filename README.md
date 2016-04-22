@@ -8,11 +8,11 @@ fork from [css-loader](https://github.com/webpack/css-loader)
 
 add new query parameter: `modulesExclude`
 
-when mode is `local`, on loading a css file matching the specified regular express
+For importing legacy codes with global mode,
 
-CSS Module mode switches to `global`
+when mode is `local`, on loading a file matching the specified regular express,
 
-for importing legacy codes with global mode
+CSS Module mode will switch to `global`.
 
 e.g:
 
@@ -31,15 +31,16 @@ loaders: [
 /path/to/project/sc-trade-ma-order/node_modules/@alife/alpha-button.css
 ```
 
-when the module`s (absolute) path is matched, it will loaded by `global` mode.
+when the module's (absolute) path is matched, it will loaded by `global` mode.
 
 ### patch ext name
 
-when `@import` a file without extName, add `.css` to the file path
+when `@import` a file without extName, add `.css` to the path
 
 ### alienv path
 
 I have no idea about it. :(
+
 
 
 ## installation
