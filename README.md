@@ -2,6 +2,10 @@
 
 ## change point
 
+fork from [css-loader](https://github.com/webpack/css-loader)
+
+### modulesExclude
+
 add new query parameter: `modulesExclude`
 
 when mode is `local`, on loading a css file matching the specified regular express
@@ -29,7 +33,13 @@ loaders: [
 
 when the module`s (absolute) path is matched, it will loaded by `global` mode.
 
+### patch ext name
 
+when `@import` a file without extName, add `.css` to the file path
+
+### alienv path
+
+I have no idea about it. :(
 
 
 ## installation

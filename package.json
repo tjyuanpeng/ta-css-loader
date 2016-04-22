@@ -1,7 +1,7 @@
 {
-  "name": "ta-css-loader",
+  "name": "@ali/ta-css-loader",
   "version": "0.23.1",
-  "author": "mark.yp",
+  "author": "Tobias Koppers @sokra",
   "description": "css loader module for webpack (fix for alibaba ta)",
   "engines": {
     "node": ">=0.12.0"
