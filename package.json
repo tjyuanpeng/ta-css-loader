@@ -38,6 +38,6 @@
   },
   "publishConfig": {
     "registry": "http://registry.npm.alibaba-inc.com"
-  }
+  },
   "license": "MIT"
 }
