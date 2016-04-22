@@ -1,4 +1,36 @@
-# css loader for webpack
+# css loader for webpack (fix for alibaba ta)
+
+## change point
+
+add new query parameter: `modulesExclude`
+
+when mode is `local`, on loading a css file matching the specified regular express
+
+CSS Module mode switches to `global`
+
+for importing legacy codes with global mode
+
+e.g:
+
+``` javascript
+loaders: [
+  {
+      test: /\.css$/,
+      loader: "style-loader!@ali/ta-css-loader?modules&modulesExclude=@alife/alpha-"
+  },
+  ...
+]
+```
+
+```
+@import 'alpha-button/button.css';
+/path/to/project/sc-trade-ma-order/node_modules/@alife/alpha-button.css
+```
+
+when the module`s (absolute) path is matched, it will loaded by `global` mode.
+
+
+
 
 ## installation
 
