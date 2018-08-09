@@ -1,4 +1,4 @@
-# css loader for webpack (fix for alibaba ta)
+# css loader for webpack (fix for prometheus)
 
 ## change point
 
@@ -20,7 +20,7 @@ e.g:
 loaders: [
   {
       test: /\.css$/,
-      loader: "style-loader!@ali/ta-css-loader?modules&modulesExclude=@alife/alpha-"
+      loader: "style-loader!ta-css-loader?modules&modulesExclude=@alife/alpha-"
   },
   ...
 ]
